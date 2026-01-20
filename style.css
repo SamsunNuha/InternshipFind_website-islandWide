@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #005f5f;
+    /* Peacock Green */
+    --primary-light: #008080;
+    --primary-dark: #004d4d;
+    --accent-color: #ffd700;
+    /* Gold accent */
+    --text-color: #333;
+    --bg-color: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/* Custom Navbar */
+.navbar {
+    background: var(--primary-color) !important;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white !important;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-bottom: 5px solid var(--accent-color);
+}
+
+#jobSearch {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.input-group .btn {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: var(--accent-color);
+    color: var(--primary-dark);
+}
+
+/* Category Chips */
+.category-chip {
+    background: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 25px;
+    color: var(--primary-color);
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.category-chip.active,
+.category-chip:hover {
+    background: var(--primary-color);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 95, 95, 0.3);
+}
+
+/* Internship Cards */
+.job-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 6px solid var(--primary-color);
+    position: relative;
+    height: 100%;
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stipend-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #e0f2f1;
+    color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.job-card h3 {
+    color: var(--primary-color);
+    margin-right: 80px;
+    /* Space for stipend tag */
+    font-size: 1.25rem;
+}
+
+.job-card .company {
+    font-weight: 600;
+    color: #555;
+}
+
+.job-details {
+    color: #666;
+    margin: 1rem 0;
+}
+
+.job-details span {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.job-details span i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.apply-btn {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+    display: block;
+    width: 100%;
+    margin-top: auto;
+}
+
+.apply-btn:hover {
+    background: var(--primary-dark);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: var(--primary-dark);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
